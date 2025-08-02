@@ -1,0 +1,13 @@
+public class MultiplyTwoDigit {
+    public static void main(String[] args) {
+        // Generate two random two-digit numbers
+        int num1 = (int) (Math.random() * 90 + 10); // Generates a number between 10 and 99
+        int num2 = (int) (Math.random() * 90 + 10); // Generates a number between 10 and 99
+
+        // Multiply the numbers
+        int result = num1 * num2;
+
+        // Output the result
+        System.out.println(num1 + " * " + num2 + " = " + result);
+    }
+}
