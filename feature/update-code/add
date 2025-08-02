@@ -1,0 +1,9 @@
+public class StringUpdater {
+
+    public static void main(String[] args) {\n        String originalString = "This is a string containing Hello World. Another Hello World here.";
+        String newString = originalString.replaceAll("Hello World", "123456789");
+
+        System.out.println("Original String: " + originalString);
+        System.out.println("Updated String: " + newString);
+    }
+}
