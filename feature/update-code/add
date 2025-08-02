@@ -1,0 +1,15 @@
+public class MultiplyRandom {
+    public static void main(String[] args) {
+        // Generate three random two-digit numbers
+        int num1 = (int) (Math.random() * 90 + 10);
+        int num2 = (int) (Math.random() * 90 + 10);
+        int num3 = (int) (Math.random() * 90 + 10);
+
+        // Multiply the numbers
+        long result = (long) num1 * num2 * num3;
+
+        // Output the numbers and the result
+        System.out.println("Numbers: " + num1 + ", " + num2 + ", " + num3);
+        System.out.println("Result of multiplication: " + result);
+    }
+}
