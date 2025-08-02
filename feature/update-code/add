@@ -1,0 +1,26 @@
+import java.util.Random;
+
+public class MultiplyRandomTwoDigitNumbers {
+
+    public static void main(String[] args) {
+        // Start timer
+        long startTime = System.nanoTime();
+
+        // Generate three random two-digit numbers
+        Random random = new Random();
+        int num1 = 10 + random.nextInt(90); // Generates a number between 10 and 99
+        int num2 = 10 + random.nextInt(90);
+        int num3 = 10 + random.nextInt(90);
+
+        // Multiply the numbers
+        long result = (long) num1 * num2 * num3;  // Use long to avoid potential integer overflow
+
+        // End timer
+        long endTime = System.nanoTime();
+
+        // Calculate time taken in seconds
+        double timeTaken = (double) (endTime - startTime) / 1_000_000_000.0;
+
+        System.out.printf("Numbers: %d, %d, %d, Product: %d, Time taken: %.10f seconds%n", num1, num2, num3, result, timeTaken);
+    }
+}
