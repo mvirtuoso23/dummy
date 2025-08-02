@@ -1,0 +1,28 @@
+```java
+public class Subtractor {
+
+    public int subtract() {
+        int a = 1;
+        int b = 2;
+        return a - b;
+    }
+
+    public static void main(String[] args) {
+        Subtractor subtractor = new Subtractor();
+        int result = subtractor.subtract();
+        System.out.println("Result: " + result);
+    }
+}
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class SubtractorTest {
+
+    @Test
+    void testSubtract() {
+        Subtractor subtractor = new Subtractor();
+        assertEquals(-1, subtractor.subtract());
+    }
+}
+```
