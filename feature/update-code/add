@@ -1,0 +1,20 @@
+import java.util.Random;
+
+public class RandomSum {
+
+    public static void main(String[] args) {
+        Random random = new Random();
+
+        // Generate three random two-digit numbers
+        int num1 = random.nextInt(90) + 10; // Generates a number between 10 and 99
+        int num2 = random.nextInt(90) + 10;
+        int num3 = random.nextInt(90) + 10;
+
+        // Calculate the sum
+        int total = num1 + num2 + num3;
+
+        // Print the numbers and their sum
+        System.out.println("Numbers: " + num1 + ", " + num2 + ", " + num3);
+        System.out.println("Sum: " + total);
+    }
+}
